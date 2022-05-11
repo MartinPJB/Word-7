@@ -4,7 +4,7 @@ import words from "./words.js";
 
 /* Variables */
 const word = words[Math.floor(Math.random() * words.length)];
-const shuffled = word.split("").sort(function(){return 0.5-Math.random()}).join("");
+const shuffled = word.split("").sort().join("");
 const keyboardButtons = document.getElementById("letters").children;
 
 let indexWord = 0,
